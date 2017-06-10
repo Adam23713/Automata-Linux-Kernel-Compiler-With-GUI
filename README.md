@@ -1,17 +1,19 @@
 # Automata-Linux-Kernel-Compiler-With-GUI
 This is a automata linux kernel compiler with gui. I write it C++ with Qt framework 5.7.
 
+IMPORTANT: This is alfa version. It's not work yet! I make it soon as possible!
+
 # Prerequisites
-You need to a C++ compiler, and the Qt >= 5.7 framework
+You need to a C++ compiler, and the Qt >= 5.7 framework and lxde/qtermwidget.
+lxde/qtermwidget source: https://github.com/lxde/qtermwidget
 
 # Compiling
-
+qmake && make
+OR
+Open the LinuxKernelUpdate.pro file with Qt Creator and build it.
 
 # Running
-
-
-# Built With
- 
+./LinuxKernelUpdate
 
 # Pictures
 ![alt text](https://user-images.githubusercontent.com/12465316/27004429-6e8ec570-4e09-11e7-880a-5300adbd8f64.png)
