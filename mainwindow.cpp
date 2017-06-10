@@ -626,14 +626,14 @@ void MainWindow::makeButtons()
     if( kernelName.at(0).contains("rc") )
          buttonVector.at(1)->setEnabled(false);
 
-    for( auto i : kernelName )
+    /*for( auto i : kernelName )
     {
         qDebug() << i;
         for(int j = i.length(); j <=0 j++)
         {
 
         }
-    }
+    }*/
 
 
 }
