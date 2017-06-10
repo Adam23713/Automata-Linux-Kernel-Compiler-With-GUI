@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/images">
+        <file>icons/application-exit.png</file>
+        <file>icons/languages.png</file>
+        <file>icons/manuals.png</file>
+        <file>icons/open-file.png</file>
+        <file>icons/Save-as.ico</file>
+        <file>icons/Save-icon.png</file>
+        <file>icons/setting.png</file>
+        <file>icons/update.png</file>
+        <file>icons/tux.png</file>
+        <file>icons/new-file-icon.png</file>
+        <file>icons/config_file.png</file>
+        <file>icons/down.png</file>
+    </qresource>
+</RCC>

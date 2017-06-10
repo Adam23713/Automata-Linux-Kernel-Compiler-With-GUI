@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>986</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Automata Linux Kernel Compiler</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/new/images/icons/tux.png</normaloff>:/new/images/icons/tux.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout" rowstretch="50,0,0">
+    <item row="1" column="0">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="MainWidget" native="true">
+      <layout class="QHBoxLayout" name="MainWidgetLayout" stretch="0,0,0,0">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="StatusLabel_1">
+            <property name="text">
+             <string>System Informations</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="StatusLabel_2">
+            <property name="text">
+             <string>Choose linux kernel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="StatusLabel_3">
+            <property name="text">
+             <string>Download</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="StatusLabel_4">
+            <property name="text">
+             <string>Configure</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="StatusLabel_5">
+            <property name="text">
+             <string>Start Compile</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="StatusLabel_6">
+            <property name="text">
+             <string>Install linux kernel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="CenterWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QWidget" name="configureWidget" native="true">
+            <layout class="QVBoxLayout" name="configureLayout"/>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>389</width>
+               <height>168</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="ScroolAreagridLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="sourceCodeLabel">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Source Code</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignHCenter|Qt::AlignTop</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="patchLabel">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Increment Patch</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignHCenter|Qt::AlignTop</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="dateAndInfoLabel">
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Date And Info</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignHCenter|Qt::AlignTop</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="downloadWidget" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QScrollArea" name="scrollArea_2">
+               <property name="widgetResizable">
+                <bool>true</bool>
+               </property>
+               <widget class="QWidget" name="scrollAreaWidgetContents">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>389</width>
+                  <height>168</height>
+                 </rect>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2"/>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="viewDiffTab">
+             <attribute name="title">
+              <string>View diff</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QTextEdit" name="viewDiffTextEdit"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="changelogTab">
+             <attribute name="title">
+              <string>Changelog</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QTextEdit" name="changeLogTextEdit">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="announceTab">
+             <attribute name="title">
+              <string>Announce</string>
+             </attribute>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="pictureLabel">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextBrowser" name="informationTextEdit"/>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_2">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="helpTab">
+             <attribute name="title">
+              <string>Help</string>
+             </attribute>
+            </widget>
+            <widget class="QWidget" name="terminalTab">
+             <attribute name="title">
+              <string>Terminal</string>
+             </attribute>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QWidget" name="ControlsWidget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="backButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Search</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="nextButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Next</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>986</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuOpen_File">
+     <property name="title">
+      <string>Open File</string>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/new/images/icons/open-file.png</normaloff>:/new/images/icons/open-file.png</iconset>
+     </property>
+     <addaction name="actionOpen_Configure_File_2"/>
+     <addaction name="actionOpen_Downloaded_Kernel"/>
+    </widget>
+    <addaction name="menuOpen_File"/>
+    <addaction name="actionSave_Configure"/>
+    <addaction name="actionSave_Configure_As"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionServer_settings"/>
+    <addaction name="actionLanguage"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_2">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionContext_Help"/>
+    <addaction name="actionAbout_program"/>
+    <addaction name="actionSearch_Update"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuHelp_2"/>
+  </widget>
+  <action name="actionSave_Configure">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/Save-icon.png</normaloff>:/new/images/icons/Save-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Config</string>
+   </property>
+  </action>
+  <action name="actionSave_Configure_As">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/Save-as.ico</normaloff>:/new/images/icons/Save-as.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save Config As...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/application-exit.png</normaloff>:/new/images/icons/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionServer_settings">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/setting.png</normaloff>:/new/images/icons/setting.png</iconset>
+   </property>
+   <property name="text">
+    <string>Server settings</string>
+   </property>
+  </action>
+  <action name="actionLanguage">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/languages.png</normaloff>:/new/images/icons/languages.png</iconset>
+   </property>
+   <property name="text">
+    <string>Language</string>
+   </property>
+  </action>
+  <action name="actionContext_Help">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/manuals.png</normaloff>:/new/images/icons/manuals.png</iconset>
+   </property>
+   <property name="text">
+    <string>Context Help</string>
+   </property>
+  </action>
+  <action name="actionAbout_program">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/tux.png</normaloff>:/new/images/icons/tux.png</iconset>
+   </property>
+   <property name="text">
+    <string>About program</string>
+   </property>
+  </action>
+  <action name="actionSearch_Update">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/update.png</normaloff>:/new/images/icons/update.png</iconset>
+   </property>
+   <property name="text">
+    <string>Search Update</string>
+   </property>
+  </action>
+  <action name="actionOpen_Configure_File_2">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/config_file.png</normaloff>:/new/images/icons/config_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Configure File</string>
+   </property>
+  </action>
+  <action name="actionOpen_Downloaded_Kernel">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/images/icons/down.png</normaloff>:/new/images/icons/down.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Downloaded Kernel</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

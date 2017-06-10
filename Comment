@@ -1,0 +1,27 @@
+/usr/src mappa meglétének ellenőrzése, vagy más mappa beállítása
+
+showWidget() ---> Fölösleges!
+
+A Re-Search funkció még nincs kész
+
+Miközben várok az információ letöltésére valami kis animáció kell
+
+getSystemInformation
+- Fájl ellenőrzése hogy létezik-e
+- A pontos Shell verzió kell
+- Kétszer írja mi micsoda
+
+on_actionOpen_Downloaded_Kernel_triggered()
+- Resetelni kell a dolgokat. Kérdezze meg menti-e a konfigurációt
+
+Optimalizálni a printKernelInfo függvényt!
+- A RegExp kifejezéseket egyszerűsítése
+- Külön függvényt írni ami a letöltött weboldalból kivág bizonyos részeket
+
+
+Bash-ben a regular kifejezések:
+Letöltő linkek: cat test | grep -o -E 'https://cdn\.kernel\.org/pub/linux/kernel/v[0-9]{1,2}\.x/(|testing/)linux-[0-9]{1,2}\.[0-9]{1,3}(\.[0-9]{1,3}|-rc[0-9])\.tar.xz'
+Patch: cat test.html | grep -o -E 'https://cdn\.kernel\.org/pub/linux/kernel/v[0-9]{1,2}\.x/incr/patch-[0-9]{1,2}\.[0-9]{1,3}\.[0-9]{1,3}-[0-9]{1,3}\.xz'
+ChangeLog linkek: cat test.html | grep -E -o 'https://cdn\.kernel\.org/pub/linux/kernel/v[0-9]{1,2}\.x/ChangeLog-[0-9]{1,2}\.[0-9]{1,3}\.[0-9]{1,2}'
+Viewdiff: cat test.html | grep -E 'https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/\?id=v[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{1,3}&amp;id2=v[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{1,3}&amp;dt=2'
+ViewDiff rc: cat test | grep -E 'https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/\?id=v[0-9]{1,3}\.[0-9]{1,3}(|\.[0-9]{1,3})-rc[0-9]{0,1}&id2=v[0-9]{1,3}\.[0-9]{1,3}(|\.[0-9]{1,3})-rc[0-9]{0,1}&dt=2'
